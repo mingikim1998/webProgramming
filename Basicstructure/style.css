@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* div{border:2px solid black;
+   padding:10px;
+   margin:10px;
+   }
+ */
+.container{
+  display: grid;
+/*   비율을 100으로 줌 */
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: 
+  /*   밑 클래스에서 grid-area로 이름을 설정 */
+  "옥상 옥상 옥상 옥상"
+  "엘베 홀 홀 홀"
+  "엘베 방1 방2 방3"
+  "엘베 지하실 지하실 지하실"
+  ;
+}
+
+.navbar{
+/*   grid-area로 이름을 설정 */
+  grid-area: 옥상;
+  background-color: yellow;
+}
+
+.sidebar{
+  grid-area: 엘베;
+  background-color: orangered;
+}
+
+.main{
+  grid-area: 홀;
+  background-color: royalblue;
+}
+
+.content1{
+  grid-area: 방1;
+  background-color: seagreen;
+}
+
+.content2{
+  grid-area: 방2;
+  background-color: navajowhite;
+}
+
+.content3{
+  grid-area: 방3;
+  background-color: paleturquoise;
+}
+
+.footer{
+  grid-area: 지하실;
+  background-color: darkgoldenrod;
+}
