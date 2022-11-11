@@ -1,0 +1,70 @@
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/nav.css";
+@import "components/advertising.css";
+
+
+/* Screens */
+@import "screens/index.css";
+
+
+
+/* body */
+body{
+font-family: 'Jua', sans-serif;
+
+}
+
+/* TEXT */
+h1{font-size:xx-large;
+  color:var(--main-txt-color);}
+h2{font-size:x-large;
+  color:var(--main-txt-color);}
+h3{font-size:x-large;
+  color:var(--sub-txt-color);}
+h4{font-size:large;
+  color:var(--main-txt-color);}
+h5{font-size:large;
+  color:var(--sub-txt-color);}
+h6{font-size:medium;color:var(--main-txt-color);}
+p{font-size:medium;
+  color:var(--sub-txt-color);}
+
+/* Flexbox  */
+.flex_frquently{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.flex_change_axis{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 메인 */
+main{
+  height: 500vh;
+  margin-top:130px;
+  padding:0px 20px;
+}
+
+.status-bar_with_header{
+  position:fixed;
+  width: 100%;
+  top:0;
+  background-color: white;
+}
+
+img{
+  width:50px;
+  height: 50px;
+  border-radius: 20px;
+}
